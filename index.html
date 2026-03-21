@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio — Tu Nombre</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,600;12..96,700&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Fondo -->
+<div class="mesh-bg"></div>
+<div class="noise-overlay"></div>
+
+<!-- Sidebar dots -->
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-dot active" data-label="inicio" data-target="hero"></div>
+  <div class="sidebar-dot" data-label="sobre mí" data-target="about"></div>
+  <div class="sidebar-dot" data-label="proyectos" data-target="projects"></div>
+  <div class="sidebar-dot" data-label="contacto" data-target="contact"></div>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero" id="hero">
+  <div class="hero-eyebrow">
+    <span class="dot"></span>
+    Disponible para proyectos
+  </div>
+
+  <h1 class="hero-name">
+    <span class="line1">Hola, soy</span>
+    <span class="line2">Tu Nombre</span>
+  </h1>
+
+  <p class="hero-tagline">
+    Diseñador y desarrollador frontend. Creo experiencias digitales que combinan forma y función con intención.
+  </p>
+
+  <div class="hero-ctas">
+    <a href="#projects" class="btn-primary">Ver proyectos</a>
+    <a href="#contact" class="btn-ghost">Hablemos →</a>
+  </div>
+
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    scroll
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="about-grid">
+    <div class="reveal">
+      <p class="about-label">Sobre mí</p>
+      <h2 class="about-heading">
+        Construyo cosas<br><em>con cuidado.</em>
+      </h2>
+      <p class="about-text">
+        Me apasiona la intersección entre el diseño visual y el código. Trabajo con atención al detalle, desde la tipografía hasta la arquitectura del sistema.
+      </p>
+      <p class="about-text">
+        Cuando no estoy frente al editor, probablemente estoy explorando interfaces que me inspiran, como Arc.
+      </p>
+      <div class="skills-wrap">
+        <span class="skill-tag">HTML & CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Design Systems</span>
+        <span class="skill-tag">Git</span>
+      </div>
+    </div>
+
+    <div class="about-card reveal" style="transition-delay: 0.15s">
+      <div class="card-stat">
+        <div class="stat-number">3+</div>
+        <div class="stat-label">Años construyendo en la web</div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="width:75%"></div></div>
+      </div>
+      <div class="card-stat">
+        <div class="stat-number">18</div>
+        <div class="stat-label">Proyectos completados</div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="width:60%"></div></div>
+      </div>
+      <div class="card-stat">
+        <div class="stat-number">∞</div>
+        <div class="stat-label">Curiosidad por el detalle</div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="width:100%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <div class="projects-wrap reveal">
+    <div class="section-header">
+      <h2 class="section-title">Proyectos</h2>
+      <span class="section-count">03 seleccionados</span>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Proyecto destacado -->
+      <a href="#" class="project-card featured">
+        <div class="glow"></div>
+        <div class="project-featured-art">🌊</div>
+        <div>
+          <div class="project-tags">
+            <span class="project-tag">REACT</span>
+            <span class="project-tag">NODE.JS</span>
+            <span class="project-tag">2024</span>
+          </div>
+          <h3 class="project-title">Nombre del Proyecto Principal</h3>
+          <p class="project-desc">Una descripción breve y poderosa de lo que hace este proyecto y qué problema resuelve.</p>
+        </div>
+        <div class="project-arrow">↗</div>
+      </a>
+
+      <!-- Proyecto 2 -->
+      <a href="#" class="project-card">
+        <div class="glow"></div>
+        <span class="project-emoji">🎨</span>
+        <div class="project-tags">
+          <span class="project-tag">FIGMA</span>
+          <span class="project-tag">CSS</span>
+        </div>
+        <h3 class="project-title">Proyecto de Diseño</h3>
+        <p class="project-desc">Sistema de diseño completo para una startup.</p>
+        <div class="project-arrow">↗</div>
+      </a>
+
+      <!-- Proyecto 3 -->
+      <a href="#" class="project-card">
+        <div class="glow"></div>
+        <span class="project-emoji">⚡</span>
+        <div class="project-tags">
+          <span class="project-tag">JAVASCRIPT</span>
+          <span class="project-tag">API</span>
+        </div>
+        <h3 class="project-title">Herramienta Open Source</h3>
+        <p class="project-desc">Una utilidad que simplifica un flujo de trabajo complejo.</p>
+        <div class="project-arrow">↗</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="contact-inner reveal">
+    <h2 class="contact-heading">
+      ¿Hacemos<br><span class="wave">algo juntos?</span>
+    </h2>
+    <p class="contact-sub">
+      Estoy abierto a colaboraciones, freelance y conversaciones interesantes. No muerde.
+    </p>
+    <div class="contact-links">
+      <a href="mailto:tu@email.com" class="contact-link">✉ tu@email.com</a>
+      <a href="https://github.com/tu-usuario" class="contact-link" target="_blank">⌥ GitHub</a>
+      <a href="https://linkedin.com/in/tu-usuario" class="contact-link" target="_blank">↗ LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<div class="footer">Hecho con cuidado · 2025</div>
+
+<script>
+  // ── CURSOR ──
+  const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursorRing');
+  let mx = 0, my = 0, rx = 0, ry = 0;
+
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    cursor.style.left = mx + 'px';
+    cursor.style.top  = my + 'px';
+  });
+
+  function animRing() {
+    rx += (mx - rx) * 0.12;
+    ry += (my - ry) * 0.12;
+    ring.style.left = rx + 'px';
+    ring.style.top  = ry + 'px';
+    requestAnimationFrame(animRing);
+  }
+  animRing();
+
+  document.querySelectorAll('a, button, .sidebar-dot').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursor.style.width = '20px';
+      cursor.style.height = '20px';
+      ring.style.opacity = '0';
+    });
+    el.addEventListener('mouseleave', () => {
+      cursor.style.width = '12px';
+      cursor.style.height = '12px';
+      ring.style.opacity = '1';
+    });
+  });
+
+  // ── SIDEBAR DOTS ──
+  const dots = document.querySelectorAll('.sidebar-dot');
+  const sections = ['hero', 'about', 'projects', 'contact'];
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      document.getElementById(dot.dataset.target).scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        dots.forEach(d => d.classList.toggle('active', d.dataset.target === id));
+      }
+    });
+  }, { threshold: 0.5 });
+
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) observer.observe(el);
+  });
+
+  // ── REVEAL ON SCROLL ──
+  const revealObs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+</script>
+</body>
+</html>
