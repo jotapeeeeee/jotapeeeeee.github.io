@@ -180,7 +180,7 @@ function initCursor() {
 /* ── 3. SIDEBAR DE NAVEGACIÓN ────────────────────────────── */
 function initSidebar() {
   const dots   = document.querySelectorAll('.sidebar-dot');
-  const secIds = ['hero', 'about', 'projects', 'contact'];
+  const secIds = ['hero', 'about', 'projects', 'cv', 'contact'];
 
   // Clic navega a la sección
   dots.forEach(dot => {
